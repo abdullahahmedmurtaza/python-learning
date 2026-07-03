@@ -1,0 +1,1 @@
+Run the tests using Python 3.12, submit50 and check50 break on Python 3.13.
