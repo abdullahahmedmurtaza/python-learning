@@ -13,7 +13,7 @@
 # Step 3 --> an isolated env folder will be created
 
 
-#to open the venv from the termina we use first enter the directory and then give the activation file path (use .bat for cmd)
+#to open the venv from the terminal we use first enter the directory and then give the activation file path (use .bat for cmd)
 
 # .\env\Scripts\activate.bat
 

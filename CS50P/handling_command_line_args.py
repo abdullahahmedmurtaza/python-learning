@@ -14,8 +14,24 @@ else:
 # We have to use a library called argparse.
 
 import argparse
-parser = argparse.ArgumentParser(description='Print anything n times')
-parser.add_argument('-n', help='number of times to meow')
+parser = argparse.ArgumentParser(description='Print name n times')
+parser.add_argument('-n',default=1,help='Number of times to print the name',type=int)
 args = parser.parse_args()
-for _ in range(int(args.n)):
+for _ in range(args.n):
     print('abdullah')
+
+# the code works as inteded but there are two points :
+# 1. the code does not work when we don't pass in an arg (it should print 1 by default)
+# 2. the code does not provide significant help when we run it with -h or --help.
+
+# the ArgumentParser takes a description as a string to describe the function.
+
+# the add_argument function also takes a help parameter --> describe what the flag does
+
+# the default arg is passed in add_argument to give a default value of n.
+# in add_argument, we can also specify the type of the argument. e.g type = int, then we do not have to convert it in the loop.
+
+# [] --> square brackets in documentation mean that the values are optional.
+
+
+# This is why we use libraries, to make our work easier, and to ocus on the actual code.
